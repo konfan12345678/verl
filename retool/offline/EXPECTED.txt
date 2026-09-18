@@ -1,0 +1,15 @@
+# Expected files after `bash offline/download_on_jumphost.sh`
+# Default root: $HOME/retool-offline-payload (~540MB without 7B weights)
+
+python/cpython-3.10.21+20260901-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz
+python/cpython-3.10.21+20260901-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz
+wheels/cp310-manylinux2014_aarch64/*.whl   # numpy scipy pandas sympy mpmath + deps
+wheels/cp310-manylinux2014_x86_64/*.whl
+datasets/JoeYing/ReTool-SFT/train_2000.parquet
+datasets/BytedTsinghua-SIA/DAPO-Math-17k/data/dapo-math-17k.parquet
+datasets/Maxwell-Jia/AIME_2024/aime_2024_problems.parquet
+datasets/yentinglin/aime_2025/data/*.parquet
+src/SandboxFusion/   # optional backup
+
+# Optional (~15GB):
+# DOWNLOAD_MODEL=1  -> models/Qwen/Qwen2.5-7B-Instruct/
