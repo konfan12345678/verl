@@ -30,3 +30,5 @@ powershell -ExecutionPolicy Bypass -File C:\StudyMaterials\RL\verl\retool\downlo
 ```
 
 脚本会创建 `C:\StudyMaterials\RL\verl\retool\payload\`（CPython、wheel、数据集）。kit 脚本在 `retool\` 下。再把整个 `retool` 目录拷到 910B。
+
+整条流程交接 prompt（复制到其它会话）：[`SESSION_PROMPT.md`](./SESSION_PROMPT.md)
